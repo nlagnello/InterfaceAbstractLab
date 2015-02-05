@@ -19,9 +19,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
+    
 
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
@@ -45,9 +43,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         this.credits = credits;
     }
 
-    public String getCourseName() {
-        return courseName;
-    }
+    
 
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {

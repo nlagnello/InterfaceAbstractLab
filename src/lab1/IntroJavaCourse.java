@@ -17,9 +17,7 @@ public class IntroJavaCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
+    
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
@@ -47,10 +45,7 @@ public class IntroJavaCourse extends ProgrammingCourse{
         this.setCredits(credits);
     }
 
-    @Override
-    public String getCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
     @Override
     public void setCourseName(String courseName) {

@@ -14,11 +14,17 @@ public abstract class ProgrammingCourse {
     private String courseNumber;
     private double credits;
     
-    public abstract String getCourseNumber();
+    public String getCourseNumber(){
+        return courseNumber;
+    }
     public abstract void setCourseNumber(String courseNumber);
-    public abstract String getCourseName();
+    
     public abstract void setCourseName(String courseName);
-    public abstract void setCredits(double credits);
     public abstract double getCredits();
+    public abstract void setCredits(double credits);
+    
+    public String getCourseName(){
+        return courseName;
+    }
     
 }

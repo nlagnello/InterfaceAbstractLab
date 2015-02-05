@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Nick Agnello
  * @version     1.00
  */
 public class AdvancedJavaCourse extends ProgrammingCourse{
@@ -60,6 +60,11 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
+    }
+
+    @Override
+    public double getCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -3,7 +3,7 @@ package lab1;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Nick Agnello
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingCourse{
@@ -45,6 +45,16 @@ public class IntroJavaCourse extends ProgrammingCourse{
             System.exit(0);
         }
         this.setCredits(credits);
+    }
+
+    @Override
+    public String getCourseName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setCourseName(String courseName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

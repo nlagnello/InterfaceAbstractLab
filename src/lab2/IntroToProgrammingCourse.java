@@ -58,7 +58,9 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     }
 
     public void printCourseInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Course Name: " + this.getCourseName());
+        System.out.println("Course Number: " + this.getCourseNumber());
+        System.out.println("Number of Credits: " + this.getCredits() + "\n");
     }
 
     

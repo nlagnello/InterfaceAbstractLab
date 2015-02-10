@@ -23,7 +23,7 @@ public class Startup {
     */
     
     public static void main(String[] args) {
-        ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2);
+        ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2,"NONE");
         ProgrammingCourse javaCourse = new IntroJavaCourse("Intro To Java","201",3,"101");
         ProgrammingCourse advancedCourse = new AdvancedJavaCourse("Advanced Java","301",3.5,"201");
         

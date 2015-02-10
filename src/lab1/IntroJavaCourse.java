@@ -18,14 +18,6 @@ public class IntroJavaCourse extends ProgrammingCourse{
     }
 
     
-
-    private void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
-    }
-
-    
-
-
     public String getPrerequisites() {
         return prerequisites;
     }
@@ -35,13 +27,12 @@ public class IntroJavaCourse extends ProgrammingCourse{
     }
 
     
-    private void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
+    
 
     public void printCourseInfo(){
         System.out.println("Course Name: " + this.getCourseName());
         System.out.println("Course Number: " + this.getCourseNumber());
-        System.out.println("Number of Credits: " + this.getCredits());
+        System.out.println("Number of Credits: " + this.getCredits() );
+        System.out.println("Prerequisite Course: " + this.getPrerequisites()+ "\n");
     }
 }

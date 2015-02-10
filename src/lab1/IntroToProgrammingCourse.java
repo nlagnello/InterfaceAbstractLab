@@ -21,29 +21,12 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
 
     
 
-    private final void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseNumber = courseNumber;
-    }
-
     
-    
-    private final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
-    }
     
     public void printCourseInfo(){
         System.out.println("Course Name: " + this.getCourseName());
         System.out.println("Course Number: " + this.getCourseNumber());
-        System.out.println("Number of Credits: " + this.getCredits());
+        System.out.println("Number of Credits: " + this.getCredits() + "\n");
+        
     }
 }

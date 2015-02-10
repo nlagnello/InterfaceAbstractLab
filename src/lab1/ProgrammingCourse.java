@@ -17,9 +17,9 @@ public abstract class ProgrammingCourse {
     public double credits;
     
     public ProgrammingCourse(String courseName, String courseNumber, double numCredits){
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-        this.credits = numCredits;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setCredits(numCredits);
     }
     
     public String getCourseNumber(){
@@ -30,6 +30,20 @@ public abstract class ProgrammingCourse {
     }
     public double getCredits(){
         return credits;
+    }
+    
+    public final void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    
+    public final void setCourseNumber(String courseNumber) {
+        if(courseNumber == null || courseNumber.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: courseNumber cannot be null of empty string");
+            System.exit(0);
+        }
+        this.courseNumber = courseNumber;
     }
        
     

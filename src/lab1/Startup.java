@@ -23,12 +23,34 @@ public class Startup {
     */
     
     public static void main(String[] args) {
-        ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2,"NONE");
+        /*ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2,"NONE");
         ProgrammingCourse javaCourse = new IntroJavaCourse("Intro To Java","201",3,"101");
         ProgrammingCourse advancedCourse = new AdvancedJavaCourse("Advanced Java","301",3.5,"201");
         
         introCourse.printCourseInfo();
         javaCourse.printCourseInfo();
-        advancedCourse.printCourseInfo();
+        advancedCourse.printCourseInfo();*/
+        
+        
+            ProgrammingCourse c1 = new AdvancedJavaCourse();
+            c1.setCourseName("Advanced Java");
+            c1.setPrerequisites("152-134");
+
+            ProgrammingCourse c2 = new IntroJavaCourse();
+            c2.setCourseName("Intro TO Java");
+            c2.setPrerequisites("152-120");
+
+            ProgrammingCourse c3 = new IntroToProgrammingCourse();
+            c3.setCourseName("Intro To Programming");
+            c3.setPrerequisites("none");
+            
+
+        ProgrammingCourse[] courses = {
+            c1,c2,c3
+        };
+        
+        for(ProgrammingCourse course : courses){
+            course.printCourseInfo();
+        }
     }
 }

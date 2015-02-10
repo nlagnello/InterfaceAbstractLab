@@ -12,9 +12,9 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
     
     
 
-    public AdvancedJavaCourse(String courseName, String courseNumber, double numCredits, String prerequisites) {
+    /*public AdvancedJavaCourse(String courseName, String courseNumber, double numCredits, String prerequisites) {
         super(courseName,courseNumber,numCredits, prerequisites);
         
-    }
+    }*/
 
 }

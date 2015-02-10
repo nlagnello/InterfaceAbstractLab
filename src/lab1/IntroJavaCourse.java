@@ -8,9 +8,9 @@ package lab1;
  */
 public class IntroJavaCourse extends ProgrammingCourse{
     
-    public IntroJavaCourse(String courseName, String courseNumber, double numCredits, String prerequisites) {
+    /*public IntroJavaCourse(String courseName, String courseNumber, double numCredits, String prerequisites) {
         super(courseName,courseNumber,numCredits,prerequisites);
         
-    }
+    }*/
 
 }

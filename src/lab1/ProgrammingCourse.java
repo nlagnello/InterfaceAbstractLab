@@ -17,12 +17,12 @@ public abstract class ProgrammingCourse {
     private double credits;
     private String prerequisites;
 
-    public ProgrammingCourse(String courseName, String courseNumber, double numCredits, String prerequisites){
+    /*public ProgrammingCourse(String courseName, String courseNumber, double numCredits, String prerequisites){
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
         this.setCredits(numCredits);
         this.setPrerequisites(prerequisites);
-    }
+    }*/
     
     public final String getPrerequisites() {
         return prerequisites;

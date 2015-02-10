@@ -16,9 +16,10 @@ public abstract class ProgrammingCourse {
     public String courseNumber;
     public double credits;
     
-    public ProgrammingCourse(String courseName, String courseNumber){
+    public ProgrammingCourse(String courseName, String courseNumber, double numCredits){
         this.courseName = courseName;
         this.courseNumber = courseNumber;
+        this.credits = numCredits;
     }
     
     public String getCourseNumber(){

@@ -14,8 +14,9 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     private String courseNumber;
     private double credits;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        super(courseName,courseNumber);
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double numCredits) {
+        super(courseName,courseNumber,numCredits);
+        
     }
 
     
@@ -43,6 +44,6 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     public void printCourseInfo(){
         System.out.println("Course Name: " + this.getCourseName());
         System.out.println("Course Number: " + this.getCourseNumber());
-        System.out.println("Number of Credits" + this.getCredits());
+        System.out.println("Number of Credits: " + this.getCredits());
     }
 }

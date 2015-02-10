@@ -19,7 +19,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.setCredits(numCredits);
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
@@ -32,7 +32,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 
@@ -45,7 +45,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.credits = credits;
     }
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
 
@@ -58,7 +58,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.courseName = courseName;
     }
 
-    public void printCourseInfo() {
+    public final void printCourseInfo() {
         System.out.println("Course Name: " + this.getCourseName());
         System.out.println("Course Number: " + this.getCourseNumber());
         System.out.println("Number of Credits: " + this.getCredits() + "\n");

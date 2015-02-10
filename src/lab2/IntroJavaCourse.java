@@ -21,7 +21,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         this.setPrerequisites(prerequisites);
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
@@ -29,7 +29,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 
@@ -37,7 +37,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         this.credits = credits;
     }
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 
@@ -45,7 +45,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         this.prerequisites = prerequisites;
     }
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
 
@@ -58,7 +58,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         this.courseName = courseName;
     }
 
-    public void printCourseInfo() {
+    public final void printCourseInfo() {
         System.out.println("Course Name: " + this.getCourseName());
         System.out.println("Course Number: " + this.getCourseNumber());
         System.out.println("Number of Credits: " + this.getCredits());

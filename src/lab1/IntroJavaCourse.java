@@ -45,9 +45,9 @@ public class IntroJavaCourse extends ProgrammingCourse{
 
     
 
-    @Override
+    
     public void setCourseName(String courseName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.courseName = courseName;
     }
 
 }

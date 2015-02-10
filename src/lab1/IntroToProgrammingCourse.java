@@ -42,7 +42,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     }
 
     
-
+    @Override
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

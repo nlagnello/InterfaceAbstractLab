@@ -53,7 +53,7 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
     }
 
     
-
+    
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }

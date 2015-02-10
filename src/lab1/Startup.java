@@ -10,7 +10,14 @@ package lab1;
  * @author nagnello
  */
 public class Startup {
-    
+    /*
+        Since the classes were already created in the program it took alot of time to
+        create the abstract superclass because I had to inspect each and every method
+        and property to see what can go into the abstract class and decide 
+        what needed to be kept inside the subclasses. but overall there was not
+        alot of code that i had to create since the method bodies were already 
+        created
+    */
     
     public static void main(String[] args) {
         ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2);

@@ -15,8 +15,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        super(courseName,courseNumber);
     }
 
     
@@ -40,6 +39,10 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         }
         this.courseName = courseName;
     }
-
     
+    public void printCourseInfo(){
+        System.out.println("Course Name: " + this.getCourseName());
+        System.out.println("Course Number: " + this.getCourseNumber());
+        System.out.println("Number of Credits" + this.getCredits());
+    }
 }

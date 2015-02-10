@@ -12,10 +12,14 @@ import javax.swing.JOptionPane;
  * @author nagnello
  */
 public abstract class ProgrammingCourse {
-    private String courseName;
-    private String courseNumber;
-    private double credits;
+    public String courseName;
+    public String courseNumber;
+    public double credits;
     
+    public ProgrammingCourse(String courseName, String courseNumber){
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+    }
     
     public String getCourseNumber(){
         return courseNumber;
@@ -37,10 +41,5 @@ public abstract class ProgrammingCourse {
         this.credits = credits;
     }
     
-    public void printCourseInfo(){
-        System.out.println("Course Name: " + this.getCourseName());
-        System.out.println("Course Number: " + this.getCourseNumber());
-        System.out.println("Number of Credits" + this.getCredits());
-                
-    }
+    public abstract void printCourseInfo();
 }

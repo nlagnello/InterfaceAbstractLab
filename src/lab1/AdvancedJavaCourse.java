@@ -15,8 +15,7 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber, String prerequisites) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        super(courseName,courseNumber);
         this.setPrerequisites(prerequisites);
     }
 
@@ -50,6 +49,10 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    
+    public void printCourseInfo(){
+        System.out.println("Course Name: " + this.getCourseName());
+        System.out.println("Course Number: " + this.getCourseNumber());
+        System.out.println("Number of Credits" + this.getCredits());
+    }
     
 }

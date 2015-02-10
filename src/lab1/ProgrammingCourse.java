@@ -37,5 +37,10 @@ public abstract class ProgrammingCourse {
         this.credits = credits;
     }
     
-    
+    public void printCourseInfo(){
+        System.out.println("Course Name: " + this.getCourseName());
+        System.out.println("Course Number: " + this.getCourseNumber());
+        System.out.println("Number of Credits" + this.getCredits());
+                
+    }
 }

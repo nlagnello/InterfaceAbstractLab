@@ -14,9 +14,11 @@ public class Startup {
     
     public static void main(String[] args) {
         ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101");
-        ProgrammingCourse javaCourse = new IntroToProgrammingCourse("Intro To Java","201");
-        ProgrammingCourse AdvancedCourse = new IntroToProgrammingCourse("Advanced Java","301");
+        ProgrammingCourse javaCourse = new IntroJavaCourse("Intro To Java","201","101");
+        ProgrammingCourse advancedCourse = new AdvancedJavaCourse("Advanced Java","301","201");
         
-        
+        introCourse.printCourseInfo();
+        javaCourse.printCourseInfo();
+        advancedCourse.printCourseInfo();
     }
 }

@@ -14,9 +14,11 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
+    public AdvancedJavaCourse(String courseName, String courseNumber,double numCredits,String prerequisites) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
+        this.setCredits(numCredits);
+        this.setPrerequisites(prerequisites);
     }
 
     public String getCourseNumber() {
@@ -36,7 +38,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -49,7 +51,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
@@ -77,4 +79,6 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         System.out.println("Number of Credits: " + this.getCredits());
         System.out.println("Prerequisite Course: " + this.getPrerequisites()+ "\n");
     }
+
+    
 }

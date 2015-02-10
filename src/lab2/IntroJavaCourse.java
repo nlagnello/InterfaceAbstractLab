@@ -9,21 +9,23 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroJavaCourse implements ProgrammingCourse{
-    String courseName;
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+    public IntroJavaCourse(String courseName, String courseNumber, double numCredits,String prerequisites) {
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setCredits(numCredits);
+        this.setPrerequisites(prerequisites);
     }
 
     public String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
 
@@ -31,7 +33,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         this.credits = credits;
     }
 
@@ -39,7 +41,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
 
@@ -47,7 +49,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
        if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
@@ -62,4 +64,6 @@ public class IntroJavaCourse implements ProgrammingCourse{
         System.out.println("Number of Credits: " + this.getCredits());
         System.out.println("Prerequisite Course: " + this.getPrerequisites()+ "\n");
     }
+
+    
 }

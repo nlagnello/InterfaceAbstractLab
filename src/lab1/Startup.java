@@ -17,6 +17,9 @@ public class Startup {
         what needed to be kept inside the subclasses. but overall there was not
         alot of code that i had to create since the method bodies were already 
         created
+    
+        I think it is very advantageous to use Liskov's Substitution principle.
+        It was much easier to create and use the classes 
     */
     
     public static void main(String[] args) {

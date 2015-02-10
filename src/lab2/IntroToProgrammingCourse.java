@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements ProgrammingCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -55,6 +55,10 @@ public class IntroToProgrammingCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    public void printCourseInfo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     

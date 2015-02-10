@@ -48,13 +48,13 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
 
     
 
-    public void setCourseName(String courseName) {
+    private void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
     
     
-    public void setCourseNumber(String courseNumber) {
+    private void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
 

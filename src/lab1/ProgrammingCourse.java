@@ -26,12 +26,7 @@ public abstract class ProgrammingCourse {
     public double getCredits(){
         return credits;
     }
-    public abstract void setCourseNumber(String courseNumber);
-    
-    public void setCourseName(String courseName){
-        this.courseName = courseName;
-    }
-    
+       
     public abstract void setCredits(double credits);
     
     

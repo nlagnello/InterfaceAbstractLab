@@ -25,12 +25,15 @@ public class Startup {
         
     
            
-        ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2);
-        ProgrammingCourse javaCourse = new IntroJavaCourse("Intro To Java","201",2.5,"101");
-        ProgrammingCourse advancedCourse = new AdvancedJavaCourse("Advanced Java","301",3,"201");
+//        ProgrammingCourse introCourse = new IntroToProgrammingCourse("Intro To Programming","101",2);
+//        ProgrammingCourse javaCourse = new IntroJavaCourse("Intro To Java","201",2.5,"101");
+//        ProgrammingCourse advancedCourse = new AdvancedJavaCourse("Advanced Java","301",3,"201");
+//        
+//        introCourse.printCourseInfo();
+//        javaCourse.printCourseInfo();
+//        advancedCourse.printCourseInfo();
         
-        introCourse.printCourseInfo();
-        javaCourse.printCourseInfo();
-        advancedCourse.printCourseInfo();
+        
+        
     }
 }

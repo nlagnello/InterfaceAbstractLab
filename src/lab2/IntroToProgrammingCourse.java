@@ -12,12 +12,23 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
-
-    public IntroToProgrammingCourse(String courseName, String courseNumber, double numCredits) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-        this.setCredits(numCredits);
+    private String Prerequisites;
+    
+//    public IntroToProgrammingCourse(String courseName, String courseNumber, double numCredits) {
+//        this.setCourseName(courseName);
+//        this.setCourseNumber(courseNumber);
+//        this.setCredits(numCredits);
+//    }
+    
+    public String getPrerequisites() {
+        return Prerequisites;
     }
+
+    public void setPrerequisites(String Prerequisites) {
+        this.Prerequisites = Prerequisites;
+    }
+
+    
 
     public final String getCourseNumber() {
         return courseNumber;

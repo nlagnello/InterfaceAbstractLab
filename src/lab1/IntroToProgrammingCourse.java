@@ -30,9 +30,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
-        return credits;
-    }
+    
 
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {

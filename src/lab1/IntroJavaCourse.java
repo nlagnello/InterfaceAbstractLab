@@ -7,7 +7,7 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingCourse{
-    String courseName;
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -23,9 +23,7 @@ public class IntroJavaCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
-        return credits;
-    }
+    
 
 
     public String getPrerequisites() {

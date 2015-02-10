@@ -58,9 +58,6 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    @Override
-    public double getCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }

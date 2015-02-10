@@ -14,9 +14,10 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
+    public AdvancedJavaCourse(String courseName, String courseNumber, String prerequisites) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
+        this.setPrerequisites(prerequisites);
     }
 
     public String getCapitalizedCourseName() {
@@ -28,7 +29,7 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    private void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");

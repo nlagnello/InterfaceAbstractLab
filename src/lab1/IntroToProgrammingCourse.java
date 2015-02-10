@@ -31,10 +31,6 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     }
 
     
-
-    
-
-    
     
     private final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
